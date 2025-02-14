@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         val etTodoTitle = findViewById<EditText>(R.id.etToDoTitle)
         val btnAddTodo = findViewById<Button>(R.id.btnAddToDo)
         val btnDeleteDoneTodos = findViewById<Button>(R.id.btnDeleteToDo)
-        val btnEditText = findViewById<Button>(R.id.)
+
 
 
 
