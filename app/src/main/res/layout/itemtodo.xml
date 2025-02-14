@@ -3,22 +3,46 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="80dp"
-    android:paddingStart="8dp"
-    android:paddingEnd="8dp">
+    android:layout_height="wrap_content"
+    android:padding="8dp">
 
+    <!-- Task Title -->
     <TextView
         android:id="@+id/tvToDoTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Example"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/cbDone"
+        android:text="Example Task"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintEnd_toStartOf="@id/cbDone"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Priority Level -->
+    <TextView
+        android:id="@+id/tvPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priority: Medium"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvToDoTitle"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Due Date -->
+    <TextView
+        android:id="@+id/tvDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Due: 2025-02-20"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPriority"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Checkbox for Completion -->
     <CheckBox
         android:id="@+id/cbDone"
         android:layout_width="wrap_content"
